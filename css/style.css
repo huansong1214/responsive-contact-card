@@ -1,0 +1,57 @@
+body {
+    background-color: #ead094;
+    font-family: 'Averia Gruesa Libre', sans-serif;
+    font-size: 1rem;
+    color: #1b2426;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+img {
+    border-radius: 50%;
+    align-self: center;
+    width: 100%;
+    max-width: 300px;
+}
+.card {
+    background-color: #d3a4ea;
+    border-radius: 30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    gap: 30px;
+    margin: 30px;
+}
+.info {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+}
+.contact, .company {
+    background-color: #83b366;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+@media screen and (min-width: 500px) {
+    .info {
+        grid-template-rows: none;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+        flex-direction: row;
+    }
+    .info {
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+    }
+}
